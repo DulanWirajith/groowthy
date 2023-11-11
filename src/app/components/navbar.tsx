@@ -5,7 +5,7 @@ const Navbar: React.FC = () => {
         <nav className="border-gray-200 light:bg-gray-900">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a
-                    href=""
+                    href="/"
                     className="flex items-center space-x-3 rtl:space-x-reverse"
                 >
                     <Image
@@ -43,11 +43,11 @@ const Navbar: React.FC = () => {
                     </svg>
                 </button>
                 <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-                    <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+                    <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
                         <li>
                             <a
                                 href="#"
-                                className="block py-2 px-3 text-white rounded md:bg-transparent md:text-blue-700 md:p-0 light:text-white md:light:text-blue-500"
+                                className="block py-2 px-3 text-white rounded md:bg-transparent md:text-[#FF6363] md:p-0 light:text-white md:light:text-[#FF6363] md:hover:text-[#FF6363]"
                                 aria-current="page"
                             >
                                 Products
@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
                         <li>
                             <a
                                 href="#"
-                                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 light:text-white md:light:hover:text-blue-500 light:hover:bg-gray-700 light:hover:text-white md:light:hover:bg-transparent"
+                                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#FF6363] md:p-0 light:text-white md:light:hover:text-[#FF6363] light:hover:bg-gray-700 light:hover:text-white md:light:hover:bg-transparent"
                             >
                                 Pricing
                             </a>
@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
                         <li>
                             <a
                                 href="#"
-                                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 light:text-white md:light:hover:text-blue-500 light:hover:bg-gray-700 light:hover:text-white md:light:hover:bg-transparent"
+                                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#FF6363] md:p-0 light:text-white md:light:hover:text-[#FF6363] light:hover:bg-gray-700 light:hover:text-white md:light:hover:bg-transparent"
                             >
                                 Support
                             </a>
