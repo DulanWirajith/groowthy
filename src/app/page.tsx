@@ -12,7 +12,7 @@ export default function UserPersona() {
                     </p>
                 </div>
                 <div className="mt-5">
-                    <p className="[font-family:'Poppins',Helvetica] text-black text-[24px]">
+                    <p className="[font-family:'Poppins',Helvetica] text-black text-[24px] text-center">
                         Elevate your brand with our dynamic solutions, <br/>reach unparalleled success in the digital
                         landscape 🚀
                     </p>
