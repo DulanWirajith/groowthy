@@ -5,7 +5,7 @@ async function getData(actor: string) {
     const data = {
         actor,
     };
-    const res = await fetch('http://localhost:3000/api/generate', {
+    const res = await fetch(process.env.URL + '/api/generate', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
