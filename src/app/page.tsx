@@ -27,12 +27,10 @@ export default function UserPersona() {
                             Try For Free
                         </button>
                     </Link>
-                    <Link href="/pricing/">
-                        <button style={ buttonStyle }
-                                className="bg-white text-black border-2 border-gray-400 font-Poppins font-medium text-lg lg:text-xl leading-8 lg:leading-10 px-5 py-3 rounded rounded-8">
-                            Pricing
-                        </button>
-                    </Link>
+                    <button style={ buttonStyle }
+                            className="bg-white text-black border-2 border-gray-400 font-Poppins font-medium text-lg lg:text-xl leading-8 lg:leading-10 px-5 py-3 rounded rounded-8">
+                        Pricing
+                    </button>
                 </div>
             </div>
         </div>
