@@ -24,7 +24,7 @@ const Card = ({
             <div className="ml-7 mt-5 mb-5">
                 {
                     removeNumbers ?
-                        <p> { reasons[0] } </p>
+                        <p className="font-medium text-xl text-white"> { reasons[0] } </p>
                         :
                         <ol className="list-decimal">
                             { reasons.map((reason, index) => (
