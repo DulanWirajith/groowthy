@@ -28,7 +28,7 @@ const Card = ({
                         :
                         <ol className="list-decimal">
                             { reasons.map((reason, index) => (
-                                <li key={ index } className="font-medium text-xl">{ reason }</li>
+                                <li key={ index } className="font-medium text-xl text-white">{ reason }</li>
                             )) }
                         </ol>
                 }
