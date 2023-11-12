@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 
-export default function Home() {
+export default function UserPersonaData() {
     const [ productOrService, setProductOrService ] = useState('');
     const [ targetAudience, setTargetAudience ] = useState('');
 
