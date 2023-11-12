@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Home() {
     const [ productOrService, setProductOrService ] = useState('');
@@ -39,10 +40,12 @@ export default function Home() {
 
                 </div>
                 <div className="mt-10 flex justify-start">
-                    <button
-                        className="bg-[#ff6363] text-white font-Poppins font-medium text-24px leading-32.04px px-5 py-3 w-40 rounded rounded-8">
-                        Generate
-                    </button>
+                    <Link href="/user-persona">
+                        <button
+                            className="bg-[#ff6363] text-white font-Poppins font-medium text-24px leading-32.04px px-5 py-3 w-40 rounded rounded-8">
+                            Generate
+                        </button>
+                    </Link>
                 </div>
             </div>
 
