@@ -3,15 +3,15 @@ import Card from "@/app/components/card";
 
 export default function Home() {
     return (
-        <div className="flex flex-row justify-center w-full h-full">
-            <div className="mt-10 flex flex-col">
-                <div className=" text-center ">
+        <div className="flex flex-col items-center justify-center min-h-screen px-4">
+            <div className="mt-10 max-w-screen-lg w-full">
+                <div className="text-center">
                     <p className="[font-family:'Poppins',Helvetica] font-bold text-transparent text-[38px] tracking-[0] leading-[56.2px]">
                         <span className="text-black"> Student 🧑‍🎓</span>
                     </p>
                 </div>
-                <section className="mt-16  w-[950px]">
-                    <div>
+                <section className="mt-8 lg:mt-16 w-full">
+                    <div className="mb-8">
                         <p className="[font-family:'Poppins',Helvetica] text-black text-[20px] font-light">
                             Meet Sarah, a college student seeking a reliable car for seamless campus commuting, weekend
                             escapes with friends, and part-time job travel. Balancing studies and social life, she
@@ -19,8 +19,8 @@ export default function Home() {
                             opportunities beyond the campus boundaries.
                         </p>
                     </div>
-                    <div className="flex mt-12">
-                        <div className="flex flex-col justify-center w-full h-full  mx-8">
+                    <div className="flex flex-col lg:flex-row gap-8">
+                        <div className="w-full lg:w-1/2">
                             <Card
                                 title="Problems 🤔"
                                 reasons={ [
@@ -28,10 +28,10 @@ export default function Home() {
                                     'Weekend getaways with friends.',
                                     'Part-time job or internship travel.',
                                     'Carrying study materials and projects.',
-                                    'Independence for errands.asd'
+                                    'Independence for errands.asd',
                                 ] }
-                                bgColor='#61A3BA'
-                                borderColor='#61A3BA'
+                                bgColor="#61A3BA"
+                                borderColor="#61A3BA"
                             />
                             <Card
                                 title="Barriers 😬"
@@ -40,13 +40,13 @@ export default function Home() {
                                     'Limited campus parking.',
                                     'Environmental concerns.',
                                     'Public transportation availability.',
-                                    'Insurance and registration complexities.'
+                                    'Insurance and registration complexities.',
                                 ] }
-                                bgColor='#0174BE'
-                                borderColor='#0174BE'
+                                bgColor="#0174BE"
+                                borderColor="#0174BE"
                             />
                         </div>
-                        <div className="flex flex-col justify-center w-full h-full mx-8">
+                        <div className="w-full lg:w-1/2">
                             <Card
                                 title="Goals 🧐"
                                 reasons={ [
@@ -54,25 +54,24 @@ export default function Home() {
                                     'Strengthened social connections.',
                                     'Improved time management.',
                                     'Practical driving skills.',
-                                    'Freedom and autonomy.'
+                                    'Freedom and autonomy.',
                                 ] }
-                                bgColor='#FF7676'
-                                borderColor='#FF7676'
+                                bgColor="#FF7676"
+                                borderColor="#FF7676"
                             />
                             <Card
                                 title="Summary 😎"
                                 reasons={ [
-                                    'Students seek cars for campus commuting, socializing, work, and independence. Goals include academic and career growth, enhanced social connections, improved time management, driving skills, and a sense of freedom. Barriers encompass financial constraints, parking issues, environmental concerns, transportation alternatives, and administrative complexities.'
+                                    'Students seek cars for campus commuting, socializing, work, and independence. Goals include academic and career growth, enhanced social connections, improved time management, driving skills, and a sense of freedom. Barriers encompass financial constraints, parking issues, environmental concerns, transportation alternatives, and administrative complexities.',
                                 ] }
-                                bgColor='#748E63'
-                                borderColor='#748E63'
+                                bgColor="#748E63"
+                                borderColor="#748E63"
                                 removeNumbers={ true }
                             />
                         </div>
                     </div>
                 </section>
             </div>
-
         </div>
     );
 }
