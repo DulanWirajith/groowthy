@@ -40,7 +40,13 @@ export default function UserPersonaData() {
                     />
                 </div>
                 <div className="mt-10 flex justify-center lg:justify-start">
-                    <Link href="/user-persona">
+                    <Link href={ {
+                        pathname: '/user-persona',
+                        query: {
+                            productOrService,
+                            targetAudience,
+                        },
+                    } }>
                         <button
                             className="bg-[#ff6363] text-white font-Poppins font-medium text-lg lg:text-xl leading-8 lg:leading-10 px-5 py-3 w-full lg:w-40 rounded rounded-8">
                             Generate
