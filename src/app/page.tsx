@@ -4,7 +4,8 @@ export default function UserPersona() {
     const buttonStyle = { width: '200px' };
 
     return (
-        <div className="flex flex-col items-center justify-center" style={ { height: 'calc(100vh - 100px)' } }>
+        <div className="flex flex-col items-center justify-center h-full md:h-screen"
+             style={ { height: 'calc(100vh - 60px)' } }>
             <div className="mt-12 max-w-screen-lg w-full">
                 <div className="text-center">
                     <p className="[font-family:'Poppins',Helvetica] font-bold text-transparent text-4xl lg:text-5xl leading-10 lg:leading-14">

@@ -7,7 +7,8 @@ export default function Home() {
     const [ targetAudience, setTargetAudience ] = useState('');
 
     return (
-        <div className="flex flex-col items-center justify-center" style={ { height: 'calc(100vh - 100px)' } }>
+        <div className="flex flex-col items-center justify-center h-full md:h-screen"
+             style={ { height: 'calc(100vh - 60px)' } }>
             <div className="mt-10 max-w-md w-full px-4">
                 <div className="text-center lg:text-left">
                     <p className="[font-family:'Poppins',Helvetica] font-bold text-transparent text-4xl lg:text-4xl leading-14 ">
