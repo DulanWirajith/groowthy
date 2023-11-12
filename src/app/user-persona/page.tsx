@@ -1,7 +1,31 @@
 "use client";
 import Card from "@/components/card";
 
-export default function Home() {
+async function getData(actor: string) {
+    const data = {
+        actor,
+    };
+    const res = await fetch('http://localhost:3000/api/generate', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    });
+
+    if (res.ok) {
+        const result = await res.json();
+        console.log('result', result);
+        return result;
+    } else {
+        console.error('Failed to fetch data');
+    }
+}
+
+export default async function UserPersona() {
+    const data = await getData('Student')
+    console.log('data', data)
+
     return (
         <div className="flex flex-col items-center justify-center min-h-screen px-4">
             <div className="mt-10 max-w-screen-lg w-full">
