@@ -2,7 +2,7 @@
   "name": "growthy",
   "version": "0.1.0",
   "engines": {
-    "node": ">=21.1.0"
+    "node": ">=18.12.1"
   },
   "private": true,
   "scripts": {
