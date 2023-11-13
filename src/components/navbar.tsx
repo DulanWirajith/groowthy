@@ -42,35 +42,6 @@ const Navbar: React.FC = () => {
                         />
                     </svg>
                 </button>
-                <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-                    <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
-                        <li>
-                            <a
-                                href="#"
-                                className="block py-2 px-3 text-white rounded md:bg-transparent md:text-[#FF6363] md:p-0 light:text-white md:light:text-[#FF6363] md:hover:text-[#FF6363]"
-                                aria-current="page"
-                            >
-                                Products
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#"
-                                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#FF6363] md:p-0 light:text-white md:light:hover:text-[#FF6363] light:hover:bg-gray-700 light:hover:text-white md:light:hover:bg-transparent"
-                            >
-                                Pricing
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#"
-                                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#FF6363] md:p-0 light:text-white md:light:hover:text-[#FF6363] light:hover:bg-gray-700 light:hover:text-white md:light:hover:bg-transparent"
-                            >
-                                Support
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </nav>
     );

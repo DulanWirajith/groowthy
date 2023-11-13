@@ -86,6 +86,11 @@ export default function UserPersona() {
                                     { description }
                                 </p>
                             </div>
+                            <div className="mt-8 mb-10 text-left border-l-8 pl-5 border-red-400">
+                                <blockquote className="text-[19px] font-medium text-gray-700">
+                                    { quote }
+                                </blockquote>
+                            </div>
                             <div className="flex flex-col lg:flex-row gap-8">
                                 <div className="w-full lg:w-1/2">
                                     <Card
