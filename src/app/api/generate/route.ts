@@ -35,9 +35,9 @@ export async function POST(req: NextRequest, res: NextResponse) {
         //     } ],
         // });
         // console.log("completion2 >>", completion2.choices);
-        return new Response(JSON.stringify({ message: 'Please enter a valid actor' }), {
+        return new Response(JSON.stringify({ message: 'Testing' }), {
             status: 200,
-            statusText: "Please enter a valid actor"
+            statusText: "Testing"
         });
     } catch (error: any) {
         if (error.response) {

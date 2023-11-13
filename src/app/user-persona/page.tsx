@@ -1,30 +1,27 @@
 "use client";
 import Card from "@/components/card";
+import { useEffect } from "react";
 
-async function getData(actor: string) {
-    const data = {
-        actor,
-    };
-    const res = await fetch(process.env.URL + '/api/generate', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-    });
-
-    if (res.ok) {
-        const result = await res.json();
-        console.log('result', result);
-        return result;
-    } else {
-        console.error('Failed to fetch data');
-    }
-}
-
-export default async function UserPersona() {
-    const data = await getData('Student')
-    console.log('data', data)
+export default function UserPersona() {
+    useEffect(() => {
+        const data = {
+            actor: 'Student',
+        };
+        fetch('/api/generate', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        }).then(async res => {
+            const result = await res.json();
+            console.log('result', result);
+        }).catch(error => {
+            console.log(error)
+            console.error('Failed to fetch data');
+        })
+        console.log('hey from useEffect')
+    }, [])
 
     return (
         <div className="flex flex-col items-center justify-center min-h-screen px-4">
