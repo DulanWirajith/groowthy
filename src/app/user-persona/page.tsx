@@ -27,7 +27,7 @@ export default function UserPersona() {
     useEffect(() => {
         setProductOrService(searchParams.get('productOrService') || '');
         setTargetAudience(searchParams.get('targetAudience') || '');
-    }, []);
+    }, [ searchParams ]);
 
     useEffect(() => {
         setDataLoading(true)
@@ -66,8 +66,8 @@ export default function UserPersona() {
                 { dataLoading ? (
                     <div className="text-center">
                         <ClipLoader color="#61A3BA" loading={ dataLoading } size={ 50 }/>
-                        <p className="mt-4 text-gray-500">Embarking on the persona creation journey. Just a moment, it's
-                            like baking a digital masterpiece—anticipate around 2 minutes. Thanks for your
+                        <p className="mt-4 text-gray-500">Embarking on the persona creation journey. Just a moment, it
+                            is like baking a digital masterpiece—anticipate around 2 minutes. Thanks for your
                             understanding!.</p>
                     </div>
                 ) : (
