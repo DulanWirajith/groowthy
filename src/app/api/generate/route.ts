@@ -62,9 +62,6 @@ export async function POST(req: NextRequest, res: NextResponse) {
     }
 
     try {
-        const timeoutPromise = new Promise((_, reject) =>
-            setTimeout(() => reject(new Error('Timeout exceeded')), 180000) // 3 minutes timeout
-        );
         console.log(generatePrompt(data))
         const completion = await openai.chat.completions.create({
             model: "gpt-3.5-turbo",

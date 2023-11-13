@@ -7,6 +7,7 @@ import { ClipLoader } from "react-spinners";
 interface Message {
     problemsPainPoints: string[];
     goals: string[];
+    needs: string[];
     userDescription: string;
     behaviorsInsights: string[];
     userQuote: string;
@@ -45,11 +46,13 @@ export default function UserPersona() {
             })
                 .then(async (res) => {
                     const { message }: { message: Message } = await res.json();
+                    console.log('message :', message);
                     setProblems(message.problemsPainPoints);
                     setGoals(message.goals);
                     setDescription(message.userDescription);
                     setBehaviours(message.behaviorsInsights);
                     setQuote(message.userQuote);
+                    setNeeds(message.needs)
                     setDataLoading(false);
                 })
                 .catch((error) => {
@@ -86,31 +89,30 @@ export default function UserPersona() {
                             <div className="flex flex-col lg:flex-row gap-8">
                                 <div className="w-full lg:w-1/2">
                                     <Card
-                                        title="Problems 🤔"
+                                        title="Behaviors and Insights 😬"
+                                        reasons={ behaviours }
+                                        bgColor="#0174BE"
+                                        borderColor="#0174BE"
+                                    />
+                                    <Card
+                                        title="Needs 😎"
+                                        reasons={ needs }
+                                        bgColor="#748E63"
+                                        borderColor="#748E63"
+                                    />
+                                </div>
+                                <div className="w-full lg:w-1/2">
+                                    <Card
+                                        title="Problems or Pain Points 🤔"
                                         reasons={ problems }
                                         bgColor="#61A3BA"
                                         borderColor="#61A3BA"
                                     />
                                     <Card
-                                        title="Barriers 😬"
-                                        reasons={ behaviours }
-                                        bgColor="#0174BE"
-                                        borderColor="#0174BE"
-                                    />
-                                </div>
-                                <div className="w-full lg:w-1/2">
-                                    <Card
                                         title="Goals 🧐"
                                         reasons={ goals }
                                         bgColor="#FF7676"
                                         borderColor="#FF7676"
-                                    />
-                                    <Card
-                                        title="Summary 😎"
-                                        reasons={ [ quote ] }
-                                        bgColor="#748E63"
-                                        borderColor="#748E63"
-                                        removeNumbers={ true }
                                     />
                                 </div>
                             </div>
